@@ -1,0 +1,42 @@
+label {
+    display:block;
+    margin-top:10px;
+    letter-spacing:1px;
+    }
+    .formulario {
+    display:block;
+    margin:0 auto;
+    width:900px;
+    color: #000000;
+    font-family:Arial;
+    }
+    form {
+    margin:0 auto;
+    width:500px;
+    }
+   
+   input, textarea {
+    width:450px;
+    height:10px;
+    background:#FFFFFF;
+    border:1px solid #1E1E1E;
+    padding:10px;
+    margin-top:5px;
+    font-size:15px;
+    color:#000000;
+    }
+   
+   textarea {
+    height:75px;
+    }
+   
+   #submit {
+    width:65px;
+    height:35px;
+   background:#191930;
+   color: white;
+    border:1px solid #000000;
+    border:#725137;
+    margin-top:10px;
+    cursor:pointer;
+    }
