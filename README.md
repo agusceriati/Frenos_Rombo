@@ -1,6 +1,5 @@
 # Frenos_Rombo
-En este proyecto, vamos a reconstruir el sitio web de una tienda de autopartes, con la idea de hacer un sitio moderno, estético, responsivo y dinámico. 
+In this project, we´re going to rebuild website from a autoparts shop near in my town, with the main idea to build a new, modern and responsive website to help both the owner and the customer to find the products, location of the shop, contact, etc.
 
-
-Link de la página original ----> https://www.frenosrombo.com.ar
+Here is the original website if you want to check it out how it looks ----> https://www.frenosrombo.com.ar
 
