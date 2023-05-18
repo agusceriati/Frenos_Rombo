@@ -4,15 +4,11 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link
-rel="shortcut icon"
-href="https://www.frenosrombo.com.ar/image/logo.png"
-type="image/x-icon"
-/>
+<link rel="shortcut icon" href="https://www.frenosrombo.com.ar/image/logo.png" type="image/x-icon">
 
 <!-- <meta content="text/html; charset=iso-8859-1" http-equiv=Content-Type> -->
 
-<title>FRENOS ROMBO</title>
+<title>Frenos Rombo</title>
 
 <!-- <meta name="title" content="FRENOS ROMBO repuestos de frenos, embragues, suspensión, reparacion volantes bimasa">
 <meta name="DC.Title" content="FRENOS ROMBO repuestos de frenos, embragues, suspensión, reparacion volantes bimasa">
@@ -32,12 +28,11 @@ type="image/x-icon"
 <link rel="stylesheet" type="text/css" href="slide/style.css" />
 <script type="text/javascript" src="slide/jquery.js"></script> -->
 <link rel="shortcut icon" href="image/funny.ico">
+<link href="style.css" rel="stylesheet" type="text/css">
 
-<link href="styles.css" rel="stylesheet" type="text/css">
 <!-- <link href="style.css" rel="stylesheet" type="text/css"> -->
 <!-- <link type="text/css" rel="stylesheet" href="estilos.css"> -->
 <!-- <link rel="stylesheet" type="text/css" href="fotos/style.css" /> -->
-<!-- <script type="text/javascript" src="fotos/jquery.js"></script> -->
 <!-- <link rel="stylesheet" type="text/css" href="nosotros/style.css" /> -->
 <!-- <script type="text/javascript" src="nosotros/jquery.js"></script> -->
 <!-- <link rel="stylesheet" href="animate.css"> -->
@@ -46,7 +41,6 @@ type="image/x-icon"
 <!-- <link href="slide_lubricantes/online.css" rel="stylesheet" type="text/css"> -->
 <!-- <link href="ws_asesoras/ws_asesoras2.css" rel="stylesheet" type="text/css"> -->
 <!-- <link rel="script" href="index.js"> -->
-<!-- <link rel="shortcut icon" ref="https://www.frenosrombo.com.ar/image/logo.png" type="image/x-icon"/> -->
 </head>
 <body>
 
@@ -54,8 +48,8 @@ type="image/x-icon"
 		<div class="nav__container container">
 			<a class="nav__logo" href="#">
 				<img class="nav__img" src="https://www.frenosrombo.com.ar/image/logo.png" alt="Logo de la compañía">
+				<h1 class="nav__title">frenos rombo</h1>
 			</a>
-			<!-- <p> AMPLIO STOCK EN REPUESTOS DE FRENOS, EMBRAGUES, SUSPENSIÓN, REPARACIÓN DE VOLANTES BIMASA Y DEMÁS ACCESORIOS PARA AUTOS, CAMIONETAS, UTILITARIOS  CAMIONES Y RODADOS EN GENERAL</p> -->
 			
 			<input type="checkbox" id="menu" class="nav__checkbox">
 			<label for="menu" class="nav__label">
@@ -65,21 +59,66 @@ type="image/x-icon"
 
 			<ul class="nav__ulist">
 				<li class="nav__list">
-					<a class="nav__link" href="#Nosotros">Nosotros</a></li>
-				<li class="nav__list">
-					<a class="nav__link" href="#Nuestros_productos">Nuestros productos</a>
+					<a class="nav__link" href="#about">Nosotros</a>
 				</li>
 				<li class="nav__list">
-					<a class="nav__link" href="#Consultas">Su consulta</a>
+					<a class="nav__link" href="#product">Productos</a>
+				</li>
+				<li class="nav__list">
+					<a class="nav__link" href="#service">Servicios</a>
+				</li>
+				<li class="nav__list">
+					<a class="nav__link" href="#consultation">Consulta</a>
 				</li>
 			</ul>
 		</div>
 	</nav>
 
-	<main class="main">
+
+
+	<header class="hero">
+		
+		<div class="slider" id="slider">
+			<div class="slider__section">
+				<img src="img/primary.jpg" alt="" class="slider__img">
+				<div class="slider__text">
+					<h2 class="slider__title">Atención Personalizada</h2>
+					<p class="slider__paragraph slider__paragraph--shadow">Esmerada y calificada atención del cliente.</p>
+					<a class="cta--slider" href="#">Comprar ahora</a>
+				</div>
+			</div>
+			<div class="slider__section">
+				<img src="img/secondary.jpg" alt="" class="slider__img">
+				<div class="slider__subtitle">
+					<p class="slider__paragraph ">Amplio stock al mejor precio</p>
+				</div>
+			</div>
+			<div class="slider__section">
+				<img src="img/tertiary.jpg" alt="" class="slider__img">
+				<div class="slider__subtitle">
+					<p class="slider__paragraph ">Asesoramiento personalizado y entrega programada</p>
+				</div>
+			</div>
+			<div class="slider__section">
+				<img src="img/quaternary.jpg" alt="" class="slider__img">
+				<div class="slider__subtitle">
+					<p class="slider__paragraph">Amplio stock al mejor precio</p>
+				</div>
+			</div>
+		</div>
+		<div class="slider__btn btn--right" id="btn--right">
+			<img class="slider__arrow" src="img/arrow-right.svg" alt="">
+		</div>
+		<div class="slider__btn btn--left" id="btn--left">
+			<img class="slider__arrow" src="img/arrow-left.svg" alt="">
+		</div>
+		
+	</header>	
+
+	<main class="main" id="about">
 		<div class="main__container container">
 			<div class="main__text">
-				<h2 id="Nosotros">Nosotros</h2>
+				<h2 class="subtitle">Nosotros</h2>
 				<div class="main__paragraphs">
 					<p>Comercializamos repuestos de frenos, embragues, suspensión, reparación volantes bimasa y demás accesorios para todo tipo de rodados.</p>
 					<p>Nuestra empresa se en encuentra desde hacemas de 40 años comercializando repuestos para rodados de todas las marcas y modelos existentes en el mercado. </p>
@@ -94,327 +133,232 @@ type="image/x-icon"
 		</div>
 	</main>
 
-	<section class="product">
+
+
+	<section class="product" id="product">
 		<div class="product__container container">
 			<div class="product__text">
-				<h2 id="Nuestros_productos">Nuestros Productos</h2>
+				<h2 class="subtitle" id="about">Nuestros Productos</h2>
 				<p class="product__paragraph">Contamos con la mas variada línea de disco de frenos, pastillas de frenos, embragues, suspensión, tren delantero, volantes bimasa (reparación) y accesorios para automotores, automotores, pick up, utilitarios, camiones y maquinarias agrícolas.Entregamos su pedido a domicilio de Capital Federal en el día. Ingrese su consulta desde el área de contacto que seguramente tenemos el repuesto que esta buscando!  </p>
 			</div>
 
+
+
 			
-			<section class="gallery__container">
-            
+			<div class="gallery__container">
 				<figure class="gallery__picture">
-					<img src="img/01.jpg" class="gallery__img" alt="imagen1">
+					<img src="img/1.jpg" class="gallery__img" alt="imagen1">
+					<div class="gallery__details">
+						<div class="gallery__content">
+							<h2 class="gallery__title">Discos de Freno</h2>
+							<p class="gallery__description">Fremax, Litton, Corven</p>
+							<a class="cta--gallery">Ver catálogo</a>
+						</div>
+					</div>
 				</figure>
 	
 				<figure class="gallery__picture">
-					<img src="img/02.jpg" class="gallery__img" alt="imagen2">
+					<img src="img/2.jpg" class="gallery__img" alt="imagen2">
+					<div class="gallery__details">
+						<div class="gallery__content">
+							<h2 class="gallery__title">Pastillas de Freno</h2>
+							<p class="gallery__description">Frasle, Cobreq, LPR, Litton!</p>
+							<a class="cta--gallery">Ver catálogo</a>
+						</div>
+					</div>
 				</figure>
 	
 				<figure class="gallery__picture">
-					<img src="img/03.jpg" class="gallery__img" alt="imagen2">
+					<img src="img/3.jpg" class="gallery__img" alt="imagen2">
+					<div class="gallery__details">
+						<div class="gallery__content">
+							<h2 class="gallery__title">Kits de Embrague</h2>
+							<p class="gallery__description">Kits y Conjuntos de Embrague! Sachs, LUK, Valeo</p>
+							<a class="cta--gallery">Ver catálogo</a>
+						</div>
+					</div>
 				</figure>
 	
 				<figure class="gallery__picture">
-					<img src="img/04.jpg" class="gallery__img" alt="imagen2">
+					<img src="img/4.jpg" class="gallery__img" alt="imagen2">
+					<div class="gallery__details">
+						<div class="gallery__content">
+							<h2 class="gallery__title">Volantes bimasa</h2>
+							<p class="gallery__description">Volantes bimasa! Sachs, LUK, Partium!</p>
+							<a class="cta--gallery">Ver catálogo</a>
+						</div>
+					</div>
 				</figure>
 	
 				<figure class="gallery__picture">
-					<img src="img/05.jpg" class="gallery__img" alt="imagen2">
+					<img src="img/5.jpg" class="gallery__img" alt="imagen2">
+					<div class="gallery__details">
+						<div class="gallery__content">
+							<h2 class="gallery__title">Amortiguador</h2>
+							<p class="gallery__description">Monroe, FricRot y Sadar!</p>
+							<a class="cta--gallery">Ver catálogo</a>
+						</div>
+					</div>
 				</figure>
-	
-				<figure class="gallery__picture">
-					<img src="img/06.jpg" class="gallery__img" alt="imagen6">
-				</figure>
-            
-				<figure class="gallery__picture">
-					<img src="img/07.jpg" class="gallery__img" alt="imagen1">
-				</figure>
-	
-				<figure class="gallery__picture">
-					<img src="img/08.jpg" class="gallery__img" alt="imagen2">
-				</figure>
-	
-				<figure class="gallery__picture">
-					<img src="img/09.jpg" class="gallery__img" alt="imagen2">
-				</figure>
-	
-				<figure class="gallery__picture">
-					<img src="img/10.jpg" class="gallery__img" alt="imagen2">
-				</figure>
-	
-				<figure class="gallery__picture">
-					<img src="img/11.jpg" class="gallery__img" alt="imagen2">
-				</figure>
-	
-				<figure class="gallery__picture">
-					<img src="img/12.jpg" class="gallery__img" alt="imagen6">
-				</figure>
-	
-				<figure class="gallery__picture">
-					<img src="img/13.jpg" class="gallery__img" alt="imagen2">
-				</figure>
-	
-				<figure class="gallery__picture">
-					<img src="img/14.jpg" class="gallery__img" alt="imagen6">
-				</figure>
-	
-			</section>
+			</div>
+		</div>
+	</section>
+
+	<section class="service" id="service">
+    	<div class="service__container container">
+			<h2 class="title">Nuestros servicios</h2>
+
+			<p class="service__paragraph">
+				We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.
+			</p>
+
+			<div class="service__services">
+				
+				<article class="service__service">
+				<div class="services__figure">
+					<img src="img/atencion.png" alt="service icon" class="service__icon" >
+				</div>
+				<h3 class="service__title">Online Banking</h3>
+				<p class="service__copy">
+					Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.
+				</p>
+				</article>
+
+				<article class="service__service">
+				<div class="services__figure">
+					<img src="img/ventas.png" alt="" class="service__icon">
+				</div>
+				<h3 class="service__title">Simple Budgeting</h3>
+				<p class="service__copy">
+					See exactly where your money goes each month. Receive notifications when you’re close to hitting your limits.
+				</p>
+				</article>
+
+				<article class="service__service">
+				<div class="services__figure">
+					<img src="img/cuentas.png" alt="" class="service__icon">
+				</div>
+				<h3 class="service__title">Simple Budgeting</h3>
+				<p class="service__copy">
+					See exactly where your money goes each month. Receive notifications when you’re close to hitting your limits.
+				</p>
+				</article>
+
+				<article class="service__service">
+				<div class="services__figure">
+					<img src="img/ofertas.png" alt="" class="service__icon">
+				</div>
+				<h3 class="service__title">Simple Budgeting</h3>
+				<p class="service__copy">
+					See exactly where your money goes each month. Receive notifications when you’re close to hitting your limits.
+				</p>
+				</article>
+
+				<article class="service__service">
+				<div class="services__figure">
+					<img src="img/stock.png" alt="" class="service__icon">
+				</div>
+				<h3 class="service__title">Simple Budgeting</h3>
+				<p class="service__copy">
+					See exactly where your money goes each month. Receive notifications when you’re close to hitting your limits.
+				</p>
+				</article>
+				
+				<article class="service__service">
+				<div class="services__figure">
+					<img src="img/entregas.png" alt="" class="service__icon">
+				</div>
+				<h3 class="service__title">Fast Onboarding</h3>
+				<p class="service__copy">
+					We don’t do branches. Open your account in minutes online and start taking control of your finances right away.
+				</p>
+				</article>
+
+				<article class="service__service">
+				<div class="services__figure">
+					<img src="img/exclusividad.png" alt="" class="service__icon" >
+				</div>
+				<h3 class="service__title">Open API</h3>
+					<p class="service__copy">
+					Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.
+				</p>
+				</article>
+
+				<article class="service__service">
+				<div class="services__figure">
+					<img src="img/identificacion.png" alt="" class="service__icon" >
+				</div>
+				<h3 class="service__title">Open API</h3>
+				<p class="service__copy">
+					Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.
+				</p>
+				</article>
+			</div>
+		</div>
+  </section> 
+
+	<section class="consultation" id="consultation">
+		<div class="consultation__container container">
+			<h2 class="subtitle">Deje su consulta</h2>
+			<p>Por favor complete sus datos y nos comunicaremos con usted a la brevedad posible.</p>
+			<div class="consultation__contact">
+				<form class="form"  onsubmit="return validarFormulario()">
+					<h4 class="form__title">Contáctanos</h4>
+					<input class="form__input" type="text" name="nombres" id="nombre" placeholder="Ingrese su Nombre">
+					<input class="form__input" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
 			
+					<textarea class="form__input textarea--form" placeholder="Mensaje:"></textarea>
 			
+					<input class="submit submit--form" type="submit" value="Enviar">
+				</form>
+				
+				<div class="consultation__text">
+					<h4 class="consultation__title">Dirección y Horario De Atención:</h4>
+					<ul class="consultation__unordered">
+						<li>Av. Salvador María Del Carril 2161, Villa Pueyrredón - CABA</li>
+						<li>Lunes a Viernes de 8:30 a 12:30 y 14 a 18 Hs. Sábados De 8:30 A 12:30 Hs.</li>
+						<li>Tel. 4571-0504</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</section>
 
 
-<section id="consultas">
-	<div class="consultas_upper_text">
-		<h2>Deje su consulta</h2>
-	</div>
-	<div class="form_consulta">
-		<form class="form"  onsubmit="return validarFormulario()">
-			<section class="form-register">
-				<h4>Formulario Registro</h4>
-				<input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
-				<input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
-				<input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-				<input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
-				<input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña nuevamente">
-				<p> <a href="#">Estoy de acuerdo con Terminos y Condiciones</a></p>
-				<input class="botons" type="submit" value="Registrar"> 
-				<p><a href="#">¿Ya tengo Cuenta?</a></p> 
-			  </section>
-		</form>
-	</div>
-</section>
-
-
-<section class="maps">
-	<div class="map_container">
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3284.70219857631!2d-58.49101064090602!3d-34.58640112044427!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7d0d7169bd1%3A0x21a262bc916e10c9!2sfrenos%20embragues%20suspensi%C3%B3n%20volantes%20bimasa!5e0!3m2!1ses!2sar!4v1683565224945!5m2!1ses!2sar" width="1200" height="800" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-	</div>
-</section>
-
-
-
-
-<footer class="footer">
-	<div class="footer__content">
-	  <nav class="footer__menu text--upper">
-		<ul class="footer-menu__items">
-		  <li class="footer-menu__item">
-			<a href="#Nosotros" class="footer-menu__link">Nosotros</a>
-		  </li>
-		  <li class="footer-menu__item">
-			<a href="#Nuestros_productos" class="footer-menu__link">Nuestros productos</a>
-		  </li>
-		  <li class="footer-menu__item">
-			<a href="#consultas" class="footer-menu__link">Consultas</a>
-		  </li>
-		</ol>
-	  </nav>
-	  <picture class="footer__image">
-		<a href="index.html"><img src="img/logo.svg" alt="Rombo logo" /></a>
-	  </picture>
-	</div>
-	<div class="footer__copyright">
-	  Todos los derechos reservados 2023 - Frenos Rombo &copy;
-	</div>
-  </footer>
-
-  <script src="index.js">
-	
-  </script>
-
-
-
-<!-- 
-<table border="0" width="990" id="table54">
-	<tr>
-		<td><div class="animated bounceInRight pulse delay-1s">
-				<p align="justify">Comercializamos repuestos de frenos, embragues, suspensión, 
-				reparación volantes bimasa y demás accesorios para todo tipo de 
-				rodados.</p>
-				<p align="justify">Nuestra empresa se en encuentra desde hace 
-				mas de 40 años comercializando repuestos para rodados de todas 
-				las marcas y modelos existentes en el mercado. </p>
-				<p align="justify">Desde 1964 estamos en el mercado de 
-				refacciones para rodados con la mas completa línea de repuestos 
-				para frenado, suspensión, dirección, embragues , reparación de 
-				volantes bimasaa y demás para automotores, pick up, utilitarios, 
-				camiones y maquinarias agrícolas. </p>
-				<p>Entregamos su pedido a domicilio de Capital Federal en el 
-				día. El respuesto que no encuentra en el mercado, encuéntrelo al 
-				mejor precio. </p>
-				</p>
-					</td>
-</td>
-	</tr>
-</table> 
-
-<div class="carrousel_images">
-	<div class="items">
-		<img src="" alt="">
-		<img src="" alt="">
-		<img src="" alt="">
-		<img src="" alt="">
-	</div>
-</div>
-
-
-<table border="0" width="990" id="table36">
-	<tr>
-			<div class="animated bounceInRight pulse delay-2s">
-<td style="border-style: none; border-width: medium" colspan="2"><h1 id="productos" align="center" style="margin-top: 10px; margin-bottom: 5px">
-		<font color="#333333">PRODUCTOS</font></h1>
-</td>	</tr>
-</table>
-
-<table border="0" width="990" id="table43">
-	<tr>
-		<td style="border-style: none; border-width: medium" width="100%">
-				
-
-						<div class="animated bounceInLeft pulse delay-6s">
-<p class="animated">Contamos con la mas variada línea de disco de frenos, pastillas de frenos, 
-	embragues, suspensión, tren delantero, volantes bimasa (reparación) y accesorios 
-	para automotores, automotores, pick up, utilitarios, camiones y maquinarias 
-	agrícolas.</p>
- </font></span></p>
-
-<p class="animated">Entregamos <span>su pedido a domicilio de Capital Federal en el día. Ingrese su consulta desde el 
-área de contacto que seguramente tenemos el repuesto que esta buscando! </span></p>
-						 
-
-<div class="gallery-container">
-	<div class="gallery-item">
-		<img src="Imágenes/01.jpg" alt="01" title="01" id="wows1_0"/>
-	  <div class="overlay">
-		<div class="overlay-content">
-		  <h2>Product 1</h2>
-		  <p>Description of product 1</p>
-		</div>
-	  </div>
-	</div>
-	
-	<div class="gallery-item">
-		<picture>
-			<img src="Imágenes/01.jpg" alt="02" title="02" id="wows1_1"/>
-		</picture>	
-	  <div class="overlay">
-		<div class="overlay-content">
-	
-		  <h2>Product 2</h2>
-		  <p>Description of product 2</p>
-		</div>
-	  </div>
-	</div>
-
-	<div class="gallery-item">
-	<img src="Imágenes/01.jpg"/>
-	  <div class="overlay">
-		<div class="overlay-content">
-		  <h2>Product 3</h2>
-		  <p>Description of product 3</p>
-		</div>
-	  </div>
-	</div>
-
-	Add more gallery items as needed
-  </div>
-
-
-
-
- -->
-<!-- 
-<div class="images_shop">
-<div class="carrousel_description">
-	<li><img src="https://www.frenosrombo.com.ar/fotos/images/01.jpg" alt="01" title="01" id="wows1_0"/></li>
-	<li><img src="https://www.frenosrombo.com.ar/fotos/images/02.jpg" alt="02" title="02" id="wows1_1"/></li>
-	<li><img src="https://www.frenosrombo.com.ar/fotos/images/03.jpg" alt="03" title="03" id="wows1_2"/></li>
-	<li><img src="https://www.frenosrombo.com.ar/fotos/images/04.jpg" alt="04" title="04" id="wows1_3"/></li>
-	<li><img src= "https://www.frenosrombo.com.ar/fotos/images/05.jpg" alt="05" title="05" id="wows1_4"/></li>
-	<li><img src= "https://www.frenosrombo.com.ar/fotos/images/06.jpg" alt="06" title="06" id="wows1_5"/></li>	
-	<li><img src="https://www.frenosrombo.com.ar/fotos/images/06.jpg" alt="07" title="07" id="wows1_6"/></li>	
-
-</div>  -->
-
-
-
-<!-- 
-<div class="section_consultas"><h1>SU CONSULTA</h1>
-	<p>Por favor complete sus datos y nos comunicaremos con Usted a la brevedad posible.	</p>
-
-</div>
-			<div align="center">
-				<table border="0" width="990" id="table50">
-					<tr>
-						<td width="517"><form id="form1" name="form1" method="post" action="enviar.php" style="text-align: center">
-  <p style="margin-top: 0; margin-bottom: 10px">
-  <font color="#000000">
-  <label>
-    Nombre</label></font></p>
-	<p style="margin-top: 0; margin-bottom: 10px">
-  <label>
-    <input name="Nombre" type="text" class="campo" id="Nombre" /></label><span class="requerido"></span><font color="#000000"><br />
-  Email:</font></p>
-	<p style="margin-top: 0; margin-bottom: 10px">
-  <label><input name="Correo" type="text" class="campo" id="Correo" /></label><span class="requerido"></span><font color="#000000"><br />
-  Teléfono:</font></p>
-	<p style="margin-top: 0; margin-bottom: 10px">
-  <label><input name="Telefono" type="text" class="campo" id="Telefono" /></label><font color="#000000"><br />
-  Mensaje:</font></p>
-	<p style="margin-top: 0; margin-bottom: 10px">
-  <label><textarea name="Mensaje" cols="45" rows="5" class="campo2" id="Mensaje:"></textarea></label><span class="requerido"></span><br />
-  <label> -->
-  	<!-- <input id="submit" type="submit" name="Enviar" value="Envia"/></label> </p> --> 
-<!-- 
-</form></td>
-						<td>
-						<table border="0" width="100%" id="table53"> 
-
-							<tr>
-								<td width="7%"></td>
-								<td    style="background-color: #6699ec;
-								width:84%" >
-						<p align="center" style="margin-top: 10px; margin-bottom: 10px">
-						<font color="#FFFFFF">Av. SALVADOR MARÍA DEL CARRIL 2161
-						</font> </p>
-						<p align="center" style="margin-top: 10px; margin-bottom: 10px">
-						<font color="#FFFFFF">VILLA PUEYRREDÓN - CABA </font> </p>
-						<p align="center" style="margin-top: 10px; margin-bottom: 10px">
-						<font color="#FFFFFF">TEL. 4571-0504 </font> </p>
-						<p align="center" style="margin-top: 10px; margin-bottom: 10px">
-						<font color="#FFFFFF">Horario de atención: 
-
-								<p align="center" style="margin-top: 10px; margin-bottom: 10px">
-								<font color="#FFFFFF">Lunes a viernes de 8:30 a 
-								12:30 y 14 a 18 hs.
-								</font>
-								<p align="center" style="margin-top: 10px; margin-bottom: 10px">
-								<font color="#FFFFFF">Sábados de 8:30 a 12:30 hs.
-								</font>
-								</td>
-								<td width="7%"></td>
-								</tr>
-								<tr>
-									<td colspan="3">&nbsp;</td>
-								</tr>
-							</table>
-						<p>&nbsp;</td>
-					</tr>
-				</table>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__content">
+			<nav class="footer__menu">
+				<ul class="footer-menu__items">
+				<li class="footer-menu__item">
+					<a href="#about" class="footer-menu__link">Nosotros</a>
+				</li>
+				<li class="footer-menu__item">
+					<a href="#product" class="footer-menu__link">Productos</a>
+				</li>
+				<li class="footer-menu__item">
+					<a href="#service" class="footer-menu__link">Servicios</a>
+				</li>
+				<li class="footer-menu__item">
+					<a href="#consultation" class="footer-menu__link">Consulta</a>
+				</li>
+				</ul>
+			</nav>
+			<a class="footer__link" href="index.html">
+				<img class="footer__img" src="img/logo.svg" alt="Rombo logo"/>
+			</a>
 			</div>
-		</td>
-			</td>
-	</tr>
-</table>  -->
-<!-- <footer>
-	<p>&copy; 2023 frenosrombo. Todos los derechos reservados. <a href="#">Política de privacidad</a></p>
-	<p class="copyright">Designed by <a href="https://github.com/agusceriati"> AustinDesign </a>& <a href="#">😼</a> 
-	</p>
-  </footer> -->
+		</div>
+		<div class="footer__copyright">
+			<div class="footer-copyright__items container">
+				<p>Todos los derechos reservados 2023 - Frenos Rombo &copy;</p>
+				<p class="footer-copyright__item">Designed by <a href="https://github.com/Matias-Paz" target="_blank" rel="noopener">MatiasDesign</a> & <a href="https://github.com/agusceriati"target="_blank" rel="noopener"> AustinDesign </a> </p>
+			</div>
+		</div>
+	</footer>
+
+<script src="index.js"></script>
+
 
 
 

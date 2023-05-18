@@ -1,40 +1,202 @@
+// ----Variables------
+const slider = document.querySelector('#slider');
+let sliderSection = document.querySelectorAll(".slider__section");
+let sliderSectionLast = sliderSection[sliderSection.length -1];
 
-// Función que se ejecutará al hacer clic en el enlace interno
-function scrollToSection(event) {
-  event.preventDefault(); // Detiene el comportamiento predeterminado del enlace
-  const targetId = event.currentTarget.getAttribute("href"); // Obtiene el atributo href del enlace
-  const targetPosition = document.querySelector(targetId).offsetTop; // Obtiene la posición de la sección
-  const startPosition = window.pageYOffset;
-  const distance = targetPosition - startPosition;
-  const duration = 700; // Duración de la animación en milisegundos (0.7 segundos en este caso)
-  let start = null;
+const btnLeft = document.querySelector("#btn--left");
+const btnRight = document.querySelector("#btn--right");
 
-  // Función que se ejecuta en cada cuadro de la animación
-  function animate(currentTime) {
-  if (start === null) start = currentTime;
-  const timeElapsed = currentTime - start;
-  const run = ease(timeElapsed, startPosition, distance, duration);
-  window.scrollTo(0, run);
-  if (timeElapsed < duration) requestAnimationFrame(animate);
-  }
+const navLink = document.querySelectorAll('.nav__link');
 
-  // Función para calcular la posición intermedia en cada cuadro de la animación
-  function ease(t, b, c, d) {
-  t /= d / 2;
-  if (t < 1) return (c / 2) * t * t + b;
-  t--;
-  return (-c / 2) * (t * (t - 2) - 1) + b;
-  }
 
-  // Inicia la animación
-  requestAnimationFrame(animate);
+// --------------
+slider.insertAdjacentElement('afterbegin', sliderSectionLast);
+
+btnRight.addEventListener('click', function(){
+  next();
+});
+
+btnLeft.addEventListener('click', function(){
+  prev();
+});
+
+navLink.forEach(function(link) {
+  link.addEventListener('click', inputChecked);
+});
+
+
+setInterval(function(){
+  next();
+}, 5000);
+
+// ----Funciones-------
+// Función para hacer que el carrusel se valla a la imagen siguiente 
+function next(){
+  let sliderSectionFist = document.querySelectorAll('.slider__section')[0];
+  slider.style.marginLeft = '-200vw';
+  slider.style.transition = 'all 0.3s';
+  setTimeout(function(){
+    slider.style.transition = 'none';
+    slider.insertAdjacentElement('beforeend', sliderSectionFist);
+    slider.style.marginLeft = '-100vw';
+  }, 300);
+};
+
+// Función para hacer que el carrusel se valla a la imagen anterior 
+function prev(){
+  let sliderSection = document.querySelectorAll(".slider__section");
+  let sliderSectionLast = sliderSection[sliderSection.length -1];
+  slider.style.marginLeft = '0';
+  slider.style.transition = 'all 0.3s';
+  setTimeout(function(){
+    slider.style.transition = 'none';
+    slider.insertAdjacentElement('afterbegin', sliderSectionLast);
+    slider.style.marginLeft = '-100vw';
+  }, 300);
+};
+
+// Cambia el input a checked cuando se realiza click en un enlace del nav
+function inputChecked() {
+  const menuCheckbox = document.querySelector('#menu');
+  menuCheckbox.checked = false;
 }
 
-// Agrega un evento de clic a todos los enlaces internos de la página
-const links = document.querySelectorAll('a[href^="#"]');
-links.forEach(link => {
-  link.addEventListener("click", scrollToSection);
-});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // Función que se ejecutará al hacer clic en el enlace interno
+// function scrollToSection(event) {
+//   event.preventDefault(); // Detiene el comportamiento predeterminado del enlace
+//   const targetId = event.currentTarget.getAttribute("href"); // Obtiene el atributo href del enlace
+//   const targetPosition = document.querySelector(targetId).offsetTop; // Obtiene la posición de la sección
+//   const startPosition = window.pageYOffset;
+//   const distance = targetPosition - startPosition;
+//   const duration = 700; // Duración de la animación en milisegundos (0.7 segundos en este caso)
+//   let start = null;
+
+
+
+// -------------Las animaciones con CSS son mejor :p    
+
+//   // Función que se ejecuta en cada cuadro de la animación
+//   function animate(currentTime) {
+//   if (start === null) start = currentTime;
+//   const timeElapsed = currentTime - start;
+//   const run = ease(timeElapsed, startPosition, distance, duration);
+//   window.scrollTo(0, run);
+//   if (timeElapsed < duration) requestAnimationFrame(animate);
+//   }
+
+//   // Función para calcular la posición intermedia en cada cuadro de la animación
+//   function ease(t, b, c, d) {
+//   t /= d / 2;
+//   if (t < 1) return (c / 2) * t * t + b;
+//   t--;
+//   return (-c / 2) * (t * (t - 2) - 1) + b;
+//   }
+
+//   // Inicia la animación
+//   requestAnimationFrame(animate);
+// }
+
+// // Agrega un evento de clic a todos los enlaces internos de la página
+// const links = document.querySelectorAll('a[href^="#"]');
+// links.forEach(link => {
+//   link.addEventListener("click", scrollToSection);
+// });
 
 
 
