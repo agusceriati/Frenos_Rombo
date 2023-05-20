@@ -1,6 +1,6 @@
 #  [Frenos Rombo](.)
 
-### Welcome to "Frenos Rombo" online shop project! 👋 
+### Welcome to "Frenos Rombo" online shop project!  
 
 
 ## What is it about
