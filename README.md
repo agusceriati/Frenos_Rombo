@@ -15,7 +15,7 @@ To get started, clone this repository on your vs.code terminal:
 ```bash
 git clone https://github.com/agusceriati/Frenos_rombo.git
 ```
-Then, open up the `index.html` file in your browser to view the website.
+Then, open up the `index.html` file on your browser to view the website.
 
 ## Built with
 
