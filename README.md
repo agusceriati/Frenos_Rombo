@@ -34,7 +34,7 @@ Matías Paz
 
 ## Any suggestion
 
-I would love for you to contribute to this project. If you have any ideas or suggestions, open a pull request or issue on GitHub. You can also contact me by [email](mailto:agusceriati@gmail.com).
+I would love to read ideas that can contribute to this project. If you have any ideas or suggestions, then open a pull request or issue on GitHub. You can also contact me by [email](mailto:agusceriati@gmail.com).
 
 
 
