@@ -1,4 +1,4 @@
-# [Frenos_Rombo] (.)
+#  [Frenos Rombo](.)
 
 ### Welcome to "Frenos Rombo" online shop project! 👋 
 
